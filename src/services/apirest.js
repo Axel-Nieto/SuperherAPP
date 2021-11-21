@@ -1,0 +1,1 @@
+export const apiurl = 'http://challenge-react.alkemy.org/';
