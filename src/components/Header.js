@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import {Nav, Navbar} from 'react-bootstrap';
 import logo from '../img/super-logo.png';
 import '../index.css';
@@ -21,9 +21,9 @@ function Header({setAut}){
 
                 <Navbar.Collapse>
                     <Nav className="text-center">
-                        <Nav.Link>HOME</Nav.Link>
-                        <Nav.Link>Search</Nav.Link>
-                        <Nav.Link>GitHub</Nav.Link>
+                        <Nav.Link href="/">HOME</Nav.Link>
+                        <Nav.Link href="/search">Search</Nav.Link>
+                        <Nav.Link href="https://github.com/Axel-Nieto/SuperherAPP" target="_blank">GitHub</Nav.Link>
                         <Nav.Link onClick={manejadorLogout}>Logout</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

@@ -1,1 +1,1 @@
-export const superurl = 'https://superheroapi.com/api/10222762266036638/';
+export const superurl = 'https://superheroapi.com/api.php/10222762266036638/';

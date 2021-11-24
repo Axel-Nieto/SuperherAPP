@@ -2,9 +2,10 @@ import React from "react";
 
 
 function Home({setAut}){
-    console.log("funciona");
     return(
-        <div>Hello Home</div>
+        <div>
+            Hello Home
+        </div>
     )
 }
 

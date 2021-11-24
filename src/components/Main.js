@@ -3,6 +3,7 @@ import {Route,useLocation} from 'react-router-dom';
 import Header from "./Header";
 import Home from "./Home";
 import Search from "./Search";
+import Footer from "./Footer";
 
 function Main({setAut}){
     const location = useLocation();
@@ -10,7 +11,7 @@ function Main({setAut}){
         <div>
             <Header setAut={setAut}/>
             <h2 className="title text-white my-5">
-                {location.pathname==="/"? "TEAM":"You don't have a team yet"}
+                {location.pathname==="/"? "TEAM":""}
             </h2>
             <Route exact path = '/search'>
                 <Search/>
@@ -18,6 +19,7 @@ function Main({setAut}){
             <Route exact path='/'>
                 <Home/>
             </Route>
+            <Footer/>
         </div>
     )
 }
