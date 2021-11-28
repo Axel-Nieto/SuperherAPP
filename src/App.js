@@ -25,7 +25,7 @@ function App() {
           <Switch>
             {
               !aut ? (
-                <Route path='/'>
+                <Route exact path='/'>
                   <Login setAut={setAut}/>
                 </Route>
               )
