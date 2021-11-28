@@ -73,22 +73,25 @@ function ResultCard({name,id,biography,url,image}){
     return (
         <div className="card">
             <div className="card-body">
-                <h4 className="card-title">{name}&nbsp;
-                    <span className={`${alineamiento==='hero'? 'text-success':'text-danger'}`}>
-                        ({alineamiento})
-                    </span>
+                <h4 className="card-title fw-bold">{name}&nbsp;
+                    
                 </h4>
+                <p className={`${alineamiento==='hero'? 'text-success':'text-danger'}`}>
+                    <span className='text-uppercase fw-bold'>
+                        {alineamiento}
+                    </span>
+                </p>
                 <img src={image} alt="img-personaje" onError={(e)=>(e.target.src=notfound)}/>               
                 <div className ="card-footer">
                     <button 
                         onClick={agregarPersonaje}
                         className = {
                             !agregado?
-                                'btn btn-dark':
-                                'btn btn-dark text-success'
+                                'btn btn-dark text-uppercase':
+                                'btn btn-dark text-uppercase text-success'
                         } 
                     >
-                        {!agregado? 'agregar':'agregado'}
+                        {!agregado? 'ADD':'ADDED'}
                     </button>
                 </div>
             </div>

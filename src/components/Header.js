@@ -14,7 +14,7 @@ function Header({setAut}){
         <div>
             <Navbar bg="dark" variant="dark" fixed="top" expand="sm" className="barra">
                 <Navbar.Brand className="mx-3">
-                    <img src={logo} alt="logo" width="48px" height="36px"/>
+                    {/*<img src={logo} alt="logo" width="48px" height="36px"/>*/}
                 </Navbar.Brand>
 
                 <Navbar.Toggle/>

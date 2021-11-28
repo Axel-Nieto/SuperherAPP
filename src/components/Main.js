@@ -8,11 +8,8 @@ import Footer from "./Footer";
 function Main({setAut}){
     const location = useLocation();
     return(
-        <div>
+        <div className="main-container">
             <Header setAut={setAut}/>
-            <h2 className="title text-white my-5">
-                {location.pathname==="/"? "TEAM":""}
-            </h2>
             <Route exact path = '/search'>
                 <Search/>
             </Route>
