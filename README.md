@@ -11,9 +11,6 @@ y haz los cambios de equipo que consideres.
 3) instala los paquetes necesarios: npm install
 4) inicialo npm install
 
-SI NO QUIERES INSTALARLO TAMBIEN PUDES PROBAR SU FUNCIONAMIENTO LA URL DE LA SECCION ABOUT DE ESTE
-REPOSITORIO
-
 ## Modo de Uso
 
 El programa es muy intuitivo, accede con el siguiente usuario y contraseña
